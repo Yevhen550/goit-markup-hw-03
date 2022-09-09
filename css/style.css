@@ -10,11 +10,23 @@
     --moz-background-team: #F5F4FA;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    outline: 2px solid tomato;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--primary-text-color);
     background-color: var(--primary-title-color);
 }
+
+
+
+
+
 
 /* List styles */
 
