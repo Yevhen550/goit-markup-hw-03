@@ -10,6 +10,10 @@
     --moz-background-team: #F5F4FA;
 }
 
+html {
+    box-sizing: border-box;
+}
+
 *,
 *::before,
 *::after {
@@ -98,6 +102,11 @@ button {
 }
 
 /* header */
+
+.conteiner {
+    margin-top: 50px;
+    outline: 9px solid rgb(31, 201, 51);
+}
 
 .header-logo {
     color: var(--accent-color);
