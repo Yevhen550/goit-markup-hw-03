@@ -8,6 +8,7 @@
     --background-color-hero: #2F303A;
     --background-color-btn: #188CE8;
     --moz-background-team: #F5F4FA;
+    --border-bottom-color: #ECECEC
 }
 
 html {
@@ -18,7 +19,7 @@ html {
 *::before,
 *::after {
     box-sizing: border-box;
-    outline: 2px solid tomato;
+    /* outline: 2px solid tomato; */
 }
 
 h1,
@@ -120,6 +121,36 @@ button {
 
 /* header */
 
+.header {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid var(--border-bottom-color)
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-title-logo {
+    color: var(--tetriary-text-color);
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    margin-right: 93px;
+    display: block;
+}
+
+.header-list,
+.contact-list {
+    display: flex;
+}
+
 .header-nav {
     display: flex;
     align-items: center;
@@ -129,11 +160,12 @@ button {
     color: var(--accent-color);
 }
 
-.header-item {
+.header-item:not(:first-child) {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    margin-left: 50px;
 }
 
 .header-link {
@@ -148,23 +180,17 @@ button {
     color: var(--accent-color);
 }
 
+.contacts-wrap {
+    margin-left: auto;
+}
+
 .header-contact {
     color: var(--secondary-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-}
-
-.logo-title {
-    color: var(--tetriary-text-color);
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    text-decoration: none;
+    margin-left: 50px;
 }
 
 /* section hero */
@@ -181,6 +207,8 @@ button {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    width: 696px;
+    margin-bottom: 30px;
 }
 
 /* section features */
@@ -203,6 +231,10 @@ button {
 
 /* section about */
 
+.about {
+    padding-bottom: 47px;
+}
+
 .about-title {
     font-weight: 700;
     font-size: 36px;
@@ -215,6 +247,7 @@ button {
 
 .team {
     background-color: var(--moz-background-team);
+    padding-top: 47px;
 }
 
 .team-item {
@@ -258,7 +291,6 @@ button {
     text-align: center;
     letter-spacing: 0.03em;
 }
-
 
 .projects-pre-title {
     color: var(--primary-text-color);
