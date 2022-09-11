@@ -110,6 +110,7 @@ button {
     font-family: inherit;
     letter-spacing: 0.03em;
     padding: 6px 22px;
+    margin-left: 8px;
 }
 
 /* Hide heading */
@@ -193,7 +194,7 @@ button {
     color: var(--accent-color);
 }
 
-.contacts-wrap {
+.header-contacts-wrap {
     margin-left: auto;
 }
 
@@ -325,12 +326,16 @@ button {
 }
 
 .portfolio-list {
+    display: flex;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
+    padding-top: 94px;
 }
+
+/* projects */
 
 .projects-pre-title {
     color: var(--primary-text-color);
