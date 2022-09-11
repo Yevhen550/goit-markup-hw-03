@@ -81,7 +81,11 @@ body {
 }
 
 button {
+    display: inline-block;
     cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    text-align: center;
 }
 
 .btn-hero {
@@ -93,6 +97,8 @@ button {
     line-height: 1.87;
     text-align: center;
     letter-spacing: 0.06em;
+    padding: 10px 32px;
+    margin-bottom: 200px;
 }
 
 .btn-portfolio {
@@ -103,6 +109,7 @@ button {
     line-height: 1.62;
     font-family: inherit;
     letter-spacing: 0.03em;
+    padding: 6px 22px;
 }
 
 /* Hide heading */
@@ -174,6 +181,9 @@ button {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: block;
 }
 
 .header-link.link.current {
@@ -197,23 +207,28 @@ button {
 
 .hero {
     background-color: var(--background-color-hero);
+    padding-top: 200px;
+    text-align: center;
 }
 
 .hero-title {
     color: var(--primary-title-color);
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    width: 696px;
-    margin-bottom: 30px;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        margin: 0 auto 30px;
+        max-width: 696px;
 }
-
+    
 /* section features */
 
-.features-pre-title {
+.features {
+    padding-top: 94px;
+}
+
+.features-pre-title: {
     color: var(--primary-text-color);
     font-weight: 700;
     font-size: 14px;
