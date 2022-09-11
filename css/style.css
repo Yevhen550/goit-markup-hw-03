@@ -154,14 +154,17 @@ button {
 }
 
 .header-list,
-.contact-list {
+.contact-list,
+.features-list,
+.about-list,
+.team-list {
     display: flex;
 }
 
 .header-nav {
     display: flex;
     align-items: center;
-    }
+}
 
 .header-logo {
     color: var(--accent-color);
@@ -226,18 +229,29 @@ button {
 
 .features {
     padding-top: 94px;
+    padding-bottom: 47px;
 }
 
-.features-pre-title: {
+.features-container {
+    display: flex;
+}
+
+.features-item:not(:first-child) {
+    margin-left: 30px;
+}
+
+.features-pre-title {
     color: var(--primary-text-color);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .features-description {
+    width: 270px;
     color: var(--secondary-text-color);
     font-size: 14px;
     line-height: 1.71;
@@ -247,7 +261,12 @@ button {
 /* section about */
 
 .about {
-    padding-bottom: 47px;
+    padding-top: 47px;
+    padding-bottom: 94px;
+}
+
+.about-item:not(:first-child) {
+    margin-left: 30px;
 }
 
 .about-title {
@@ -256,16 +275,19 @@ button {
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
 }
 
 /* team */
 
 .team {
     background-color: var(--moz-background-team);
-    padding-top: 47px;
+    padding: 94px 0;
 }
 
-.team-item {
+.team-item:not(:first-child) {
+    margin-left: 30px;
+    padding-bottom: 30px;
     background-color: var(--primary-title-color);
 }
 
@@ -275,6 +297,7 @@ button {
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
 }
 
 .team-pre-title {
@@ -283,6 +306,7 @@ button {
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-top: 30px;
 }
 
 .team-description {
@@ -291,6 +315,7 @@ button {
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-top: 10px;
 }
 
 /* portfolio */
@@ -325,6 +350,7 @@ button {
 /* footer */
 
 .footer {
+    padding-bottom: 60px;
     color: var(--primary-title-color);
     background-color: var(--background-color-hero);
 }
@@ -345,6 +371,20 @@ button {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    margin-top: 9px;
+}
+
+.footer-title-logo {
+    padding-top: 60px;
+    margin-bottom: 20px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--primary-title-color)
 }
 
 .footer-logo {
@@ -355,16 +395,6 @@ button {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-}
-
-.logo {
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: var(--primary-title-color)
 }
 
 .footer-address.link:hover,
