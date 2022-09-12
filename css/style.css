@@ -8,7 +8,8 @@
     --background-color-hero: #2F303A;
     --background-color-btn: #188CE8;
     --moz-background-team: #F5F4FA;
-    --border-bottom-color: #ECECEC
+    --border-bottom-color: #ECECEC;
+    --border-portfolio: #EEEEEE
 }
 
 html {
@@ -78,6 +79,7 @@ body {
 .btn-portfolio:focus {
     color: var(--primary-title-color);
     background-color: var(--accent-color);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 button {
@@ -289,7 +291,12 @@ button {
 .team-item:not(:first-child) {
     margin-left: 30px;
     padding-bottom: 30px;
-    background-color: var(--primary-title-color);
+    background-color: var(--primary-title-color);   
+}
+
+.team-item {
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-title {
@@ -321,11 +328,8 @@ button {
 
 /* portfolio */
 
-.projects-link {
-    text-decoration: none;
-}
-
 .portfolio-list {
+    justify-content: center;
     display: flex;
     font-weight: 500;
     font-size: 16px;
@@ -335,7 +339,30 @@ button {
     padding-top: 94px;
 }
 
+.portfolio-list:not(:first-child) {
+    margin-left: 8px;
+}
+
 /* projects */
+
+.projects-link {
+    text-decoration: none;
+}
+
+.projects-list {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projects-item {
+    width: 370px;
+    margin-right: 30px;
+}
+
+.projects-item:nth-child(3n) {
+    margin-right: 0;
+}
 
 .projects-pre-title {
     color: var(--primary-text-color);
