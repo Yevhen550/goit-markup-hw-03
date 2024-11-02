@@ -9,6 +9,7 @@
     --white-background: #FFFFFF;
     --cloud-color: #f4f4fd;
     --active-ocean-color: #404bbf;
+    --heirlines-cornflower: #E7E9FC;
 
     /* Fonts */
     --font-family: "Roboto", sans-serif;
@@ -24,31 +25,7 @@ body {
     font-family: 'Roboto', sans-serif;
     color: var(--primary-slate-color);
     background-color: var(--white-background);
-}
 
-a {
-    text-decoration: none;
-}
-
-ul,
-ol {
-    list-style-type: none;
-    margin: 0;
-}
-
-li {
-    list-style-type: none;
-}
-
-button {
-    cursor: pointer;
-    font-family: inherit;
-}
-
-img {}
-
-address {
-    font-style: normal;
 }
 
 h1,
@@ -61,10 +38,67 @@ p {
     margin: 0;
 }
 
+ul,
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+}
+
+address {
+    font-style: normal;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 /* #endregion-Base */
 
 /* #region-Common */
-.section {}
+
+.container {
+    margin: 0 auto;
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
 .logo {
     font-family: var(--second-family);
@@ -94,24 +128,55 @@ p {
 
 /* #region-Header */
 
-.header {}
+.header {
+    display: block;
+    border-bottom: 1px solid var(--heirlines-cornflower);
+}
 
-.header-nav {}
+.header-container {
+    display: flex;
+    align-items: center;
+}
 
-.header-logo {}
+.header-nav {
+    display: flex;
+    align-items: center;
+}
 
-.header-list {}
+.header-logo {
+    margin-right: 76px;
+}
 
-.header-item {}
+.header-list {
+    display: flex;
+}
+
+.header-item:not(:first-child) {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    margin-left: 50px;
+}
 
 .header-link {
+    display: block;
     font-weight: 500;
     line-height: 1.50;
     letter-spacing: 0.02em;
+    padding-top: 24px;
+    padding-bottom: 24px;
     color: var(--primary-dark-color);
 }
 
-.contact-list {}
+.contact-list {
+    display: flex;
+
+}
+
+.contact {
+    margin-left: auto;
+}
 
 .contact-item {}
 
@@ -132,7 +197,10 @@ p {
 
 /* #region-Hero */
 
-.hero-image {
+.hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    text-align: center;
     background-color: var(--primary-dark-color);
 }
 
@@ -143,6 +211,8 @@ p {
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
+    margin: 0 auto 48px;
+    max-width: 496px;
 }
 
 .hero-btn {
@@ -163,9 +233,13 @@ p {
 /* #region-Features */
 .features {}
 
+.features-container {}
+
 .features-title {}
 
-.features-list {}
+.features-list {
+    display: flex;
+}
 
 .features-item {}
 
@@ -190,6 +264,8 @@ p {
     background-color: var(--cloud-color);
 }
 
+.team-container {}
+
 .team-title {
     font-weight: 700;
     font-size: 36px;
@@ -200,7 +276,9 @@ p {
     color: var(--primary-dark-color);
 }
 
-.team-list {}
+.team-list {
+    display: flex;
+}
 
 .team-item {
     background-color: var(--white-background);
@@ -227,6 +305,8 @@ p {
 /* #region-Portfolio */
 .portfolio {}
 
+.portfolio-container {}
+
 .portfolio-title {
     font-weight: 700;
     font-size: 36px;
@@ -237,7 +317,10 @@ p {
     color: var(--primary-dark-color);
 }
 
-.portfolio-list {}
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .portfolio-item {}
 
@@ -259,12 +342,20 @@ p {
 
 /* #region-Footer */
 .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-color: var(--primary-dark-color);
 }
 
-.footer-logo {}
+.footer-container {}
+
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 16px;
+}
 
 .footer-desription {
+    width: 264px;
     line-height: 1.50;
     letter-spacing: 0.02em;
     color: var(--cloud-color);
