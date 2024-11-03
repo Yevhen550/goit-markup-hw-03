@@ -219,6 +219,8 @@ address {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    border-radius: 4px;
+    padding: 16px 32px;
     color: var(--white-background);
     background-color: var(--primary-brand-color);
 }
@@ -241,19 +243,23 @@ address {
     display: flex;
 }
 
-.features-item {}
+.features-item {
+    width: calc((100% - 30px) / 3);
+}
 
-.features-card-title {
+.features-pre-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 120%;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
     color: var(--primary-dark-color);
 }
 
 .features-description {
     line-height: 1.50;
     letter-spacing: 0.02em;
+    width: 264px;
     color: var(--primary-slate-color);
 }
 
