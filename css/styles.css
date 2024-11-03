@@ -243,8 +243,12 @@ address {
     display: flex;
 }
 
-.features-item {
-    width: calc((100% - 30px) / 3);
+/* .features-item {
+    width: calc((100% - 30px * 3) / 4);
+} */
+
+.features-item:not(:first-child) {
+    margin-left: 24px;
 }
 
 .features-pre-title {
