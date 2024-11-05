@@ -218,7 +218,8 @@ address {
 }
 
 .hero-btn {
-    display: inline-block;
+    display: block;
+    margin: auto;
     height: 56px;
     min-width: 169px;
     border: none;
