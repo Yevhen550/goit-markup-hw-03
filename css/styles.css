@@ -218,7 +218,7 @@ address {
 }
 
 .hero-btn {
-    display: block;
+    display: inline-block;
     height: 56px;
     min-width: 169px;
     border: none;
